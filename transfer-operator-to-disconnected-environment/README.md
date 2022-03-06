@@ -40,4 +40,4 @@
   oc adm catalog mirror --insecure localhost:5000/ocs/ocs-index:v4.6 file:///local/index
   ```
   
-10.   
+10. Copy the generated directories into removable media

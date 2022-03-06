@@ -31,13 +31,13 @@
     You would also need to add it to the insecure registries array in the `/etc/containers/registries.conf` file.
     
 8. Push the image:
-  ```
-  podman push localhost:5000/ocs/ocs-index:v4.6
-  ```
+     ```
+     podman push localhost:5000/ocs/ocs-index:v4.6
+     ```
   
 9. Now you can mirror the needed files for the operator to your filesystem:
-  ```
-  oc adm catalog mirror --insecure localhost:5000/ocs/ocs-index:v4.6 file:///local/index
-  ```
+     ```
+     oc adm catalog mirror --insecure localhost:5000/ocs/ocs-index:v4.6 file:///local/index
+     ```
   
 10. Copy the generated directories into removable media
